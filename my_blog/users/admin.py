@@ -9,4 +9,5 @@ class UserAdmin(BaseUserAdmin):
         (None,{'fields':('username','password')}),
         ('Informacion personal',{'fields':('first_name','last_name','email')}),
         ('Permisos',{'fields':('is_active','is_staff','is_superuser','groups', 'user_permissions',)}),
+        ('Redes sociales',{'fields':('web_site',)}),
     )
