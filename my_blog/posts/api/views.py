@@ -10,6 +10,7 @@ class PostModelViewSet(ModelViewSet):
     permission_classes = [IsAdminOrReadOnly]
     serializer_class = PostSerializer
     queryset = Post.objects.all()
+    http_method_names = ['get']
 
 
 
